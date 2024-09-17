@@ -17,7 +17,6 @@ In questo repository sono presenti i file per l'esecuzione di alcune delle opera
 ### Librerie esterne Python:
 
 - flask
-- sqlite3
 
 ### Librerie esterne GO:
 
