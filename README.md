@@ -34,10 +34,10 @@ go run pagamento.go
 ```
 Sarà possibile verificare i risultati delle operazioni nello standard output.
 
--Per avere la lista dei prodotti disponibili, visitare con un browser l'url: localhost:8080/list
--Per avere la lista dei gioielli disponibili, visitare con un browser l'url: localhost:8080/gioielli
--Per avere la lista dei mobili disponibili, visitare con un browser l'url: localhost:8080/mobili
--Per avere la lista degli immobili disponibili, visitare con un browser l'url: localhost:8080/immobili
+- Per avere la lista dei prodotti disponibili, visitare con un browser l'url: localhost:8080/list
+- Per avere la lista dei gioielli disponibili, visitare con un browser l'url: localhost:8080/gioielli
+- Per avere la lista dei mobili disponibili, visitare con un browser l'url: localhost:8080/mobili
+- Per avere la lista degli immobili disponibili, visitare con un browser l'url: localhost:8080/immobili
 
 Per aggiungere un prodotto nel database, eseguire una richiesta POST del tipo:
 
@@ -51,7 +51,7 @@ Per eliminare un prodotto dal database, eseguire una richiesta DELETE del tipo:
 curl -X DELETE -H "Content-Type: application/json" -d '{"nome":"corona del re"}' http://localhost:8080/delete
 ```
 
-Per aggiungere un prodotto al carrello, eseguire una richiesta post del tipo:
+Per aggiungere un prodotto al carrello, eseguire una richiesta POST del tipo:
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"nome":"corona del re"}' http://localhost:8081/chart/add
