@@ -35,9 +35,9 @@ go run pagamento.go
 Sarà possibile verificare i risultati delle operazioni nello standard output.
 
 - Per avere la lista dei prodotti disponibili, visitare con un browser l'url: localhost:8080/list
-- Per avere la lista dei gioielli disponibili, visitare con un browser l'url: localhost:8080/gioielli
-- Per avere la lista dei mobili disponibili, visitare con un browser l'url: localhost:8080/mobili
-- Per avere la lista degli immobili disponibili, visitare con un browser l'url: localhost:8080/immobili
+- Per avere la lista dei gioielli disponibili, visitare con un browser l'url: localhost:8080/list/gioielli
+- Per avere la lista dei mobili disponibili, visitare con un browser l'url: localhost:8080/list/mobili
+- Per avere la lista degli immobili disponibili, visitare con un browser l'url: localhost:8080/list/immobili
 
 Per aggiungere un prodotto nel database, eseguire una richiesta POST del tipo:
 
