@@ -25,8 +25,6 @@ func payment_process(w http.ResponseWriter, r *http.Request) {
 	scadenza := r.Form.Get("scadenza")
 	cvc := r.Form.Get("cvc")
 
-	transazione(numero, scadenza, cvc)
-
 	// Apre la connessione al database
 	dbC, err := sql.Open("sqlite3", "carrello.db")
 	if err != nil {
@@ -40,6 +38,8 @@ func payment_process(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		panic(err.Error())
 	}
+
+	transazione(numero, scadenza, cvc, sum)
 
 	fmt.Println("Hai pagato ", sum, "€! \n")
 
@@ -87,7 +87,7 @@ func payment_process(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func transazione(numero string, scadenza string, cvc string) {
+func transazione(numero string, scadenza string, cvc string, sum float64) {
 
 	fmt.Print("Completamento transazione... \n")
 }
