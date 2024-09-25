@@ -50,7 +50,7 @@ func payment_process(w http.ResponseWriter, r *http.Request) {
 	defer dbE.Close()
 
 	// Inserisce in rows i risultati della query (più righe)
-	rows, err := dbE.Query("SELECT nome FROM prodotti")
+	rows, err := dbC.Query("SELECT nome FROM elementi")
 	if err != nil {
 		panic(err.Error())
 	}
